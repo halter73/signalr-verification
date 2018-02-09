@@ -6,4 +6,17 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>SignalR Demo!</p>
+
+<div>
+    <form id="message-form">
+        Message: <input type="text" id="message-textbox" /> <button>Broadcast</button>
+    </form>
+</div>
+
+<ul id="messages-list"></ul>
+
+@section Scripts {
+    <script src="/lib/signalr/signalr.js"></script>
+    <script src="/js/broadcast.js"></script>
+}
