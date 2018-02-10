@@ -15,7 +15,7 @@ namespace signalr_verification
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-            foo
+            foo;
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
