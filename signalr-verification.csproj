@@ -1,18 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!--<PreserveCompilationContext>true</PreserveCompilationContext>-->
+    <!--<RuntimeIdentifier>win-x64</RuntimeIdentifier>-->
   </PropertyGroup>
 
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0-preview1-28275" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.0-preview1-28275" />
+    <None Remove="ts\broadcast.ts" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview1-28275" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0-preview2-30558" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <!--<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview2-30558" />-->
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ts\broadcast.ts" />
   </ItemGroup>
 
 </Project>
